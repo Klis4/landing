@@ -1,24 +1,19 @@
 import { app } from "../../gulpfile.js";
 
 import imagemin from "gulp-imagemin";
-import webp from "gulp-webp";
 
-export const images = () => {
+export const icons = () => {
   return app.gulp
-    .src(app.path.frontend.images)
+    .src(app.path.frontend.icons)
     .pipe(
       app.plugins.plumber(
         app.plugins.notify.onError({
-          title: "IMAGES",
+          title: "ICONS",
           message: "Error: <%= error.message %>",
         })
       )
     )
-
-    .pipe(app.plugins.newer(app.path.build.images))
-    .pipe(app.plugins.if(app.isBuild, webp()))
-
-    .pipe(app.plugins.if(app.isBuild, app.gulp.src(app.path.frontend.images)))
+    .pipe(app.plugins.newer(app.path.build.icons))
     .pipe(
       app.plugins.if(
         app.isBuild,
@@ -30,7 +25,7 @@ export const images = () => {
         })
       )
     )
-    .pipe(app.gulp.dest(app.path.build.images))
+    .pipe(app.gulp.dest(app.path.build.icons))
 
     .pipe(app.plugins.browserSync.stream());
 };
