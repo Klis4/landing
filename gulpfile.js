@@ -9,6 +9,8 @@ import { server } from "./gulp/tasks/server.js";
 import { scss } from "./gulp/tasks/scss.js";
 import { js } from "./gulp/tasks/js.js";
 import { images } from "./gulp/tasks/images.js";
+import { icons } from "./gulp/tasks/icons.js";
+import { fonts } from "./gulp/tasks/fonts.js";
 
 export const app = {
   isBuild: process.argv.includes("--build"),
@@ -23,9 +25,10 @@ function watcher() {
   gulp.watch(path.watch.scss, scss);
   gulp.watch(path.watch.js, js);
   gulp.watch(path.watch.images, images);
+  gulp.watch(path.watch.icons, icons);
 }
 
-const mainTasks = gulp.parallel(html, scss, js, images);
+const mainTasks = gulp.parallel(html, fonts, scss, js, images, icons);
 
 const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server));
 const build = gulp.series(reset, mainTasks);
