@@ -150,3 +150,61 @@
     height: calc-adapt(24);
   }
 }
+
+.bottom-nav {
+  background-color: $green-color;
+}
+
+.bottom-nav__navigation {
+  gap: calc-adapt(16);
+  padding: calc-adapt(20, 0);
+
+  .separator {
+    background-color: $text-primary-color;
+    opacity: .2;
+  }
+}
+
+.bottom-nav__item {
+  width: max-content;
+
+  font-size: calc-adapt(16);
+  font-weight: 400;
+  text-align: center;
+
+  text-decoration: none;
+  color: white;
+
+  &:hover {
+    color: darken($text-60-color, 30%);
+  }
+}
+
+.bottom-nav__search {
+  display: flex;
+  align-items: center;
+  right: 0;
+
+  padding: calc-adapt(0, 36);
+  gap: calc-adapt(10);
+
+  width: calc-adapt(435);
+  height: 100%;
+
+  background-color: $dark-green-color;
+
+  img {
+    width: calc-adapt(24);
+    height: calc-adapt(24);
+  }
+
+  input {
+    border: none;
+    background: none;
+
+    font-size: calc-adapt(16);
+    color: white;
+
+    outline: none;
+  }
+}
