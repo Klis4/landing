@@ -16,8 +16,8 @@
   <body>
     <header class="header">
       <div class="upper-nav container">
-        <div class="row align-items-center justify-content-center">
-          <div class="upper-nav__left col-2">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-2">
             <img
               src="src/assets/img/logo.png"
               alt="logo"
@@ -27,91 +27,83 @@
               loading="lazy"
             />
           </div>
-          <div class="upper-nav__center col-6">
-            <div class="row">
-              <div class="col-8">
-                <div class="salons row align-items-center">
-                  <span class="salons__title col-12 text-uppercase"
-                    >Салоны</span
-                  >
-                  <div class="row">
-                    <a
-                      class="salons__city salons__city_active col-auto"
-                      type="button"
-                      >Гродно (10)</a
-                    >
-                    <div class="separator vertical"></div>
-                    <a class="salons__city col-auto" type="button"
-                      >Токио (10)</a
-                    >
-                  </div>
-                </div>
-              </div>
-              <div class="col-4">
-                <button class="check-request-btn" type="button">
-                  <img
-                    src="src/assets/icons/LettersIcon.svg"
-                    alt="letters"
-                    width="30"
-                    height="30"
-                    loading="lazy"
-                  />
-                  <span>Запишитесь на проверку</span>
-                </button>
+          <div class="col-4">
+            <div class="salons row align-items-center">
+              <span class="salons__title col-12 text-uppercase"
+                >Салоны</span
+              >
+              <div class="row">
+                <a
+                  class="salons__city salons__city_active col-auto"
+                  type="button"
+                  >Гродно (10)</a
+                >
+                <div class="separator vertical"></div>
+                <a class="salons__city col-auto" type="button"
+                  >Токио (10)</a
+                >
               </div>
             </div>
           </div>
-          <div class="upper-nav__right col-4">
-            <div class="row">
-              <div class="header-contacts col-6">
-                <div class="row align-items-center">
-                  <div class="col-12">
-                    <a
-                      class="header-contacts__phone"
-                      href="tel:+7 (800) 111-111-1"
-                      >+7 (800) 111-111-1</a
-                    >
-                  </div>
-                  <div class="col-12">
-                    <a class="header-contacts__callme" href="#" role="button"
-                      >Перезвоните мне</a
-                    >
-                  </div>
-                </div>
+          <div class="col-2">
+            <button class="check-request-btn" type="button">
+              <img
+                src="src/assets/icons/LettersIcon.svg"
+                alt="letters"
+                width="30"
+                height="30"
+                loading="lazy"
+              />
+              <span>Запишитесь на проверку</span>
+            </button>
+          </div>
+          <div class="header-contacts col-2">
+            <div class="row align-items-center">
+              <div class="col-12">
+                <a
+                  class="header-contacts__phone"
+                  href="tel:+7 (800) 111-111-1"
+                  >+7 (800) 111-111-1</a
+                >
               </div>
-              <div class="header-buttons col-6">
-                <button
-                  class="header-buttons__button header-buttons__button_favourite position-relative"
+              <div class="col-12">
+                <a class="header-contacts__callme" href="#" role="button"
+                  >Перезвоните мне</a
                 >
-                  <img
-                    class="icon-button"
-                    src="src/assets/icons/HeartIcon.svg"
-                    alt="favourite"
-                    width="28"
-                    height="24"
-                  />
-                  <span class="position-absolute badge rounded-pill">
-                    7
-                    <span class="visually-hidden">favourites number</span>
-                  </span>
-                </button>
-                <button
-                  class="header-buttons__button header-buttons__button_cart position-relative"
-                >
-                  <img
-                    class="icon-button"
-                    src="src/assets/icons/CartIcon.svg"
-                    alt="favourite"
-                    width="30"
-                    height="28"
-                  />
-                  <span class="position-absolute badge rounded-pill">
-                    3
-                    <span class="visually-hidden">items in cart</span>
-                  </span>
-                </button>
               </div>
             </div>
+          </div>
+          <div class="header-buttons col-1">
+            <button
+              class="header-buttons__button header-buttons__button_favourite position-relative"
+            >
+              <img
+                class="icon-button"
+                src="src/assets/icons/HeartIcon.svg"
+                alt="favourite"
+                width="28"
+                height="24"
+              />
+              <span class="position-absolute badge rounded-pill">
+                7
+                <span class="visually-hidden">favourites number</span>
+              </span>
+            </button>
+            <button
+              class="header-buttons__button header-buttons__button_cart position-relative"
+            >
+              <img
+                class="icon-button"
+                src="src/assets/icons/CartIcon.svg"
+                alt="favourite"
+                width="30"
+                height="28"
+              />
+              <span class="position-absolute badge rounded-pill">
+                3
+                <span class="visually-hidden">items in cart</span>
+              </span>
+            </button>
           </div>
         </div>
       </div>

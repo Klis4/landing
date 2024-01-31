@@ -1,19 +1,9 @@
 @import "./common/variables.scss";
 @import "./common/functions.scss";
 
-.upper-nav__left {
-  display: flex;
-  justify-content: end;
-}
-
 .logo {
   width: calc-adapt(200);
   height: calc-adapt(112);
-}
-
-.upper-nav__center {
-  display: flex;
-  justify-content: center;
 }
 
 .salons__title {
@@ -90,14 +80,10 @@
   }
 }
 
-.upper-nav__right {
-  display: flex;
-  justify-content: start;
-}
-
 .header-contacts {
   text-align: right;
 }
+
 .header-contacts__phone {
   display: flex;
   justify-content: end;
