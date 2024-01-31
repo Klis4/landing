@@ -16,6 +16,7 @@ export const path = {
     fonts: `${buildSrcFolder}/assets/fonts/`,
     images: `${buildSrcFolder}/assets/img/`,
     icons: `${buildSrcFolder}/assets/icons/`,
+    libs: `${buildSrcFolder}/libs/`,
   },
   frontend: {
     html: `${frontendFolder}/*.html`,
@@ -24,6 +25,7 @@ export const path = {
     fonts: `${frontendSrcFolder}/assets/fonts/*.woff2`,
     images: `${frontendSrcFolder}/assets/img/*.{jpg,jpeg,png,gif,webp}`,
     icons: `${frontendSrcFolder}/assets/icons/*.{svg,ico}`,
+    libs: `${frontendSrcFolder}/libs/**/*.*`,
   },
   watch: {
     html: `${frontendFolder}/*.html`,

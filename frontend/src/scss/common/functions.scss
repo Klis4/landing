@@ -1,0 +1,23 @@
+@import "./variables.scss";
+
+@function calc-adaptive-size($size) {
+  @return calc($size / #{$stock-layout-width} * 100vw);
+}
+
+@function calc-adapt($size, $size-2: false, $size-3: false, $size-4: false) {
+  @if $size-4 {
+    @return calc-adaptive-size($size) calc-adaptive-size($size-2)
+      calc-adaptive-size($size-3) calc-adaptive-size($size-4);
+  } @else {
+    @if $size-3 {
+      @return calc-adaptive-size($size) calc-adaptive-size($size-2)
+        calc-adaptive-size($size-3);
+    } @else {
+      @if $size-2 {
+        @return calc-adaptive-size($size) calc-adaptive-size($size-2);
+      } @else {
+        @return calc-adaptive-size($size);
+      }
+    }
+  }
+}

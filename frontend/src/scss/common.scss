@@ -1,0 +1,15 @@
+@import "./common/variables.scss";
+
+.separator {
+  background-color: $sroke-color;
+
+  &.vertical {
+    width: 1px;
+    padding: 0 0.5px;
+  }
+
+  &.horizontal {
+    height: 1px;
+    padding: 0.5px 0;
+  }
+}
