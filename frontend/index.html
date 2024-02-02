@@ -29,9 +29,7 @@
           </div>
           <div class="col-4">
             <div class="salons row align-items-center">
-              <span class="salons__title col-12 text-uppercase"
-                >Салоны</span
-              >
+              <span class="salons__title col-12 text-uppercase">Салоны</span>
               <div class="row">
                 <a
                   class="salons__city salons__city_active col-auto"
@@ -39,9 +37,7 @@
                   >Гродно (10)</a
                 >
                 <div class="separator vertical"></div>
-                <a class="salons__city col-auto" type="button"
-                  >Токио (10)</a
-                >
+                <a class="salons__city col-auto" type="button">Токио (10)</a>
               </div>
             </div>
           </div>
@@ -60,9 +56,7 @@
           <div class="header-contacts col-2">
             <div class="row align-items-center">
               <div class="col-12">
-                <a
-                  class="header-contacts__phone"
-                  href="tel:+7 (800) 111-111-1"
+                <a class="header-contacts__phone" href="tel:+7 (800) 111-111-1"
                   >+7 (800) 111-111-1</a
                 >
               </div>
@@ -108,12 +102,16 @@
         </div>
       </div>
       <div class="bottom-nav">
-        <div class="row align-items-center justify-content-center position-relative">
+        <div
+          class="row align-items-center justify-content-center position-relative"
+        >
           <div class="col-6">
             <nav class="bottom-nav__navigation row justify-content-between">
               <a class="bottom-nav__item col-2 g-0" href="#">Текст текст</a>
               <div class="separator vertical"></div>
-              <a class="bottom-nav__item col-2 g-0" href="#">Текст текст текст</a>
+              <a class="bottom-nav__item col-2 g-0" href="#"
+                >Текст текст текст</a
+              >
               <div class="separator vertical"></div>
               <a class="bottom-nav__item col-2 g-0" href="#">Текст текст</a>
               <div class="separator vertical"></div>
@@ -122,17 +120,88 @@
               <a class="bottom-nav__item col-2 g-0" href="#">Текст текст</a>
               <div class="separator vertical"></div>
               <a class="bottom-nav__item col-2 g-0" href="#">Текст и текст</a>
-
             </nav>
           </div>
           <div class="bottom-nav__search position-absolute">
-            <img src="src/assets/icons/MagnifyingGlassIcon.svg" alt="search" class="search-icon" width="24" height="24" loading="lazy">
-            <input type="text" class="search-input">
+            <img
+              src="src/assets/icons/MagnifyingGlassIcon.svg"
+              alt="search"
+              class="search-icon"
+              width="24"
+              height="24"
+              loading="lazy"
+            />
+            <input type="text" class="search-input" />
           </div>
         </div>
       </div>
     </header>
-
+    <main class="main">
+      <section class="hero">
+        <div class="container">
+          <div class="row">
+            <div class="hero__left col-8">
+              <nav
+                class="hero__breadcrumb"
+                style="--bs-breadcrumb-divider: &quot;&quot;"
+                aria-label="breadcrumb"
+              >
+                <ol class="breadcrumb align-items-center">
+                  <li class="breadcrumb-item">
+                    <a href="#"
+                      ><img
+                        class="breadcrumb-item__icon"
+                        src="src/assets/icons/HomeIcon.svg"
+                        alt="home"
+                        width="16"
+                        height="16"
+                        loading="lazy"
+                    /></a>
+                  </li>
+                  <li class="breadcrumb-item" aria-current="page">
+                    <span>Текст текст</span>
+                  </li>
+                </ol>
+              </nav>
+              <div class="hero__content">
+                <h1 class="hero__title">
+                  Заголовок
+                  <span class="primary-color">текст текст</span>
+                  текст текст текст текст
+                </h1>
+                <p class="hero__text">
+                  текст текст, текст текст текст текст текст текст текст текст
+                  текст текст текст текст текст текст текст текст текст текст
+                  текст текст текст текст текст текст текст текст текст текст
+                  текст текст текст текст текст текст.
+                  <i
+                    >Текст &ndash; текст текст текст текст текст , текст текст
+                    текст текст текст текст текст текст текст текст текст текст
+                    текст текст текст текст.</i
+                  >
+                </p>
+              </div>
+              <button
+                class="hero__check-request-btn text-uppercase"
+                type="button"
+              >
+                записаться на проверку
+              </button>
+            </div>
+            <div class="hero__right col-4">
+              <img
+                src="src/assets/img/hero.png"
+                alt="hero image"
+                class="hero__image"
+                width="400"
+                height="509"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <script src="src/libs/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="src/js/index.min.js"></script>
   </body>

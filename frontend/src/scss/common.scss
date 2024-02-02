@@ -1,4 +1,6 @@
 @import "./common/variables.scss";
+@import "./common/functions.scss";
+
 
 .separator {
   background-color: $sroke-color;
@@ -12,4 +14,12 @@
     height: 1px;
     padding: 0.5px 0;
   }
+}
+
+.primary-color {
+  color: $primary-color;
+}
+
+.container {
+  max-width: calc-adapt(1320);
 }
