@@ -4,7 +4,12 @@
 @import "./header.scss";
 @import "./hero.scss";
 @import "./advantages.scss";
+@import "./benefits.scss";
 
 * {
   font-family: "Proxima Nova";
+}
+
+h3 {
+  margin: 0;
 }
