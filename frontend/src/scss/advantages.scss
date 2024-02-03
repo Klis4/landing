@@ -1,0 +1,90 @@
+@import "./common/functions.scss";
+@import "./common/variables.scss";
+
+.advantages {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: calc-adapt(60, 0, 0, 0);
+    gap: calc-adapt(30);
+  }
+
+  &__title {
+    text-align: center;
+    font-size: calc-adapt(28);
+    font-weight: 700;
+    color: $text-primary-color;
+  }
+
+  &__check-request_btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: calc-adapt(20);
+    padding: calc-adapt(10, 0, 10, 30);
+
+    width: calc-adapt(332);
+
+    border-radius: 100px;
+    border: none;
+    background: linear-gradient(
+      90deg,
+      #{$green-gradient-start} 0%,
+      #{$green-gradient-finish} 100%
+    );
+
+    font-size: calc-adapt(16);
+    font-weight: 700;
+    color: white;
+
+    img {
+      width: calc-adapt(50);
+      height: calc-adapt(50);
+    }
+  }
+}
+
+.advantage-card {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+
+  &__image {
+    margin-bottom: calc-adapt(-37);
+    width: calc-adapt(74);
+    height: calc-adapt(74);
+
+    z-index: 1;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: calc-adapt(190);
+
+    padding: calc-adapt(65, 35, 35, 35);
+
+    border-radius: calc-adapt(15);
+    background-color: $bg-light-gray;
+  }
+
+  &__text {
+    width: 80%;
+
+    text-align: center;
+    font-size: calc-adapt(18);
+    line-height: calc-adapt(30);
+    font-weight: 700;
+    color: $text-primary-color;
+  }
+}
