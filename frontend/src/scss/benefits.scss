@@ -1,0 +1,52 @@
+@import "./common/functions.scss";
+@import "./common/variables.scss";
+
+.benefits {
+  &__container {
+    padding: calc-adapt(60, 0);
+  }
+
+  &__title {
+    font-size: calc-adapt(28);
+    font-weight: 700;
+    color: $text-primary-color;
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+
+    gap: calc-adapt(30);
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+  }
+
+  &__image {
+    width: calc-adapt(350);
+    height: calc-adapt(246);
+
+    border-radius: calc-adapt(10);
+  }
+}
+
+.benefits-list {
+  display: flex;
+  flex-direction: column;
+
+  gap: calc-adapt(4);
+  padding-left: calc-adapt(28);
+
+  &__item {
+    font-size: calc-adapt(18);
+    font-weight: 400;
+    color: $text-primary-color;
+
+    &::marker {
+      color: $text-primary-color;
+    }
+  }
+}
