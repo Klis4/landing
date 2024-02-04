@@ -1,6 +1,23 @@
 @import "./common/variables.scss";
 @import "./common/functions.scss";
 
+.header {
+  position: sticky;
+  top: 0;
+
+  overflow: hidden;
+  background-color: white;
+  z-index: 5;
+}
+
+.upper-nav {
+  padding: 0;
+}
+
+.upper-nav__logo {
+  display: flex;
+}
+
 .logo {
   width: calc-adapt(200);
   height: calc-adapt(112);
@@ -10,6 +27,10 @@
   font-size: calc-adapt(16);
   font-weight: 700;
   color: $text-primary-color;
+}
+
+.salons__content {
+  gap: calc-adapt(10);
 }
 
 .salons__city {
@@ -48,7 +69,7 @@
   }
 }
 
-.check-request-btn {
+.header__check-request-btn {
   display: flex;
   flex-direction: row;
 
@@ -78,6 +99,16 @@
 
     color: $text-primary-color;
   }
+
+  &:hover {
+    background-color: $primary-color;
+    span {
+      color: white;
+    }
+    img {
+      filter: brightness(0) invert(1);
+    }
+  }
 }
 
 .header-contacts {
@@ -93,6 +124,10 @@
   text-decoration: none;
 
   color: $text-primary-color;
+
+  &:hover {
+    color: $primary-color;
+  }
 }
 
 .header-contacts__callme {
@@ -104,6 +139,10 @@
   text-decoration-style: dashed;
 
   color: $primary-color;
+
+  &:hover {
+    color: $dark-green-color;
+  }
 }
 
 .header-buttons {
@@ -114,6 +153,8 @@
 .header-buttons__button {
   width: calc-adapt(46);
   height: calc-adapt(38);
+
+  padding: 0;
 
   border: none;
   background: transparent;
@@ -147,7 +188,7 @@
 
   .separator {
     background-color: $text-primary-color;
-    opacity: .2;
+    opacity: 0.2;
   }
 }
 

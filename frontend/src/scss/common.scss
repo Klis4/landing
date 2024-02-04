@@ -1,7 +1,6 @@
 @import "./common/variables.scss";
 @import "./common/functions.scss";
 
-
 .separator {
   background-color: $sroke-color;
 
@@ -45,5 +44,13 @@
   img {
     width: calc-adapt(50);
     height: calc-adapt(50);
+  }
+
+  &:hover {
+    background: linear-gradient(
+      90deg,
+      #{$green-gradient-finish} 0%,
+      #{$green-gradient-start} 100%
+    );
   }
 }
