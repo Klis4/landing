@@ -2,6 +2,8 @@
 @import "./common/variables.scss";
 
 .how-it-works {
+  background-color: $bg-light-gray;
+  
   &__container {
     display: flex;
     flex-direction: column;
