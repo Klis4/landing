@@ -97,7 +97,7 @@
 
   font-size: calc-adapt(14);
   font-weight: 600;
-  letter-spacing: calc-adapt(-0.6);
+  letter-spacing: calc-adapt(-0.7);
   color: $text-primary-color;
 
   &:hover {
@@ -109,6 +109,7 @@
 .hero__right {
   display: flex;
   justify-content: end;
+  padding: 0;
 }
 
 .hero__image {
