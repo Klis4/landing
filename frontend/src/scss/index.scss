@@ -6,12 +6,15 @@
 @import "./advantages.scss";
 @import "./benefits.scss";
 @import "./how-it-works.scss";
+@import "./faq.scss";
 
 * {
   font-family: "Proxima Nova";
 }
 
 h3,
-ul {
+ul,
+p,
+ol {
   margin: 0;
 }
