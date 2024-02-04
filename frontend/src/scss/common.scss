@@ -36,11 +36,7 @@
 
   border-radius: 100px;
   border: none;
-  background: linear-gradient(
-    90deg,
-    #{$green-gradient-start} 0%,
-    #{$green-gradient-finish} 100%
-  );
+  background: $green-gradient;
 
   font-size: calc-adapt(16);
   font-weight: 700;
