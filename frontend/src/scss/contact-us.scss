@@ -41,13 +41,25 @@
     width: fit-content;
     padding: calc-adapt(15, 30);
 
-    border: none;
+    border: 1px solid $primary-color;
     border-radius: 100px;
     background: $green-gradient;
 
     font-size: calc-adapt(16);
     font-weight: 600;
     color: white;
+
+    &:hover {
+      background: linear-gradient(
+        90deg,
+        #{$green-gradient-finish} 0%,
+        #{$green-gradient-start} 100%
+      );
+    }
+
+    &.submitted {
+      background: linear-gradient(90deg, gray 0%, black 80%);
+    }
   }
 }
 

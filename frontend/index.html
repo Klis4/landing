@@ -130,7 +130,7 @@
               height="24"
               loading="lazy"
             />
-            <input type="text" class="search-input" />
+            <input type="search" class="search-input" />
           </div>
         </div>
       </div>
@@ -529,9 +529,9 @@
                 текст текст </span>
             </div>
             <div class="col-4">
-              <form class="subscribe-form row" enctype="application/x-www-form-urlencoded" method="post" name="subscribe">
+              <form id="subscribe-form" class="subscribe-form row" name="subscribe">
                 <input class="subscribe-form__input col-6" type="email" autocomplete="email" name="email" pattern="/^((([0-9A-Za-z]{1}[-0-9A-z\.]{1,}[0-9A-Za-z]{1})|([0-9А-Яа-я]{1}[-0-9А-я\.]{1,}[0-9А-Яа-я]{1}))@([-A-Za-z]{1,}\.){1,2}[-A-Za-z]{2,})$/u" placeholder="email@email.com" required></input>
-                <button class="subscribe-form__submit-btn col-6" type="submit">Подписаться</button>
+                <button class="subscribe-form__submit-btn col-6" id="subscribe-form-btn" type="submit">Подписаться</button>
               </form>
             </div>
             <div class="col-4">
@@ -660,6 +660,24 @@
         </div>
       </div>
     </footer>
+
+    <div id="imageModal" class="image-modal">
+      <span class="image-modal__close">&times;</span>
+      <img id="modalImage" class="image-modal__content" src="" alt="Modal Image">
+    </div>
+
+    <div id="check-request-modal" class="check-request-modal">
+      <span class="image-modal__close">&times;</span>
+      <form class="check-request-modal__form" action="" enctype="application/x-www-form-urlencoded" method="post" name="check-request-form">
+        <input type="email" class="check-request-modal__input" placeholder="email@email.com" id="check-request-modal-email" name="email" required>
+        <input type="tel" class="check-request-modal__input" placeholder="+7 (800) 111-111-1" id="check-request-modal-phone" name="phone" required>
+        <div class="check-request-modal__checkbox-wrapper">
+          <input type="checkbox" id="check-request-modal-newsletters" name="newsletters" required>
+          <label for="check-request-modal-newsletters">Я хочу получать информацию о новостях и акциях компании</label>
+        </div>
+        <button class="check-request-modal__submit-btn" type="submit">Записаться на проверку</button>
+      </form>
+    </div>
 
     <script src="src/libs/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="src/js/index.min.js"></script>
