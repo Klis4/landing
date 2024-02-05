@@ -529,9 +529,9 @@
                 текст текст </span>
             </div>
             <div class="col-4">
-              <form class="subscribe-form row" enctype="application/x-www-form-urlencoded" method="post" name="subscribe">
+              <form id="subscribe-form" class="subscribe-form row" name="subscribe">
                 <input class="subscribe-form__input col-6" type="email" autocomplete="email" name="email" pattern="/^((([0-9A-Za-z]{1}[-0-9A-z\.]{1,}[0-9A-Za-z]{1})|([0-9А-Яа-я]{1}[-0-9А-я\.]{1,}[0-9А-Яа-я]{1}))@([-A-Za-z]{1,}\.){1,2}[-A-Za-z]{2,})$/u" placeholder="email@email.com" required></input>
-                <button class="subscribe-form__submit-btn col-6" type="submit">Подписаться</button>
+                <button class="subscribe-form__submit-btn col-6" id="subscribe-form-btn" type="submit">Подписаться</button>
               </form>
             </div>
             <div class="col-4">

@@ -3,6 +3,7 @@ import { Autoplay } from "swiper/modules";
 
 import { isWebp } from "./modules/functions.js";
 import { checkRequestModalInit, imageModalInit } from "./modules/modals.js";
+import { subscribeFormInit } from "./modules/form.js";
 
 import "swiper/css";
 
@@ -21,3 +22,4 @@ const howItWorksSwiper = new Swiper("#how-it-works-swiper", {
 
 imageModalInit();
 checkRequestModalInit();
+subscribeFormInit();
