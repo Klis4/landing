@@ -1,0 +1,85 @@
+@import "./common/functions.scss";
+@import "./common/variables.scss";
+
+.how-it-works {
+  background-color: $bg-light-gray;
+  
+  &__container {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    padding: calc-adapt(50, 0, 60, 0);
+  }
+
+  &__title {
+    margin-bottom: calc-adapt(10);
+
+    font-size: calc-adapt(28);
+    font-weight: 700;
+    color: $text-primary-color;
+  }
+
+  &__swiper {
+    width: calc-adapt(1320);
+  }
+
+  &__additional-info {
+    font-size: calc-adapt(16);
+    font-weight: 400;
+    color: $text-60-color;
+  }
+}
+
+.swiper-wrapper {
+  padding: calc-adapt(20, 0);
+}
+
+.how-it-works-slide {
+  width: calc-adapt(420) !important;
+  margin-right: calc-adapt(30);
+
+  overflow: hidden;
+  box-shadow: calc-adapt(0, 4, 8, 0) #0000001a;
+
+  &__upper {
+    display: flex;
+    justify-content: center;
+
+    border-top-left-radius: calc-adapt(8);
+    border-top-right-radius: calc-adapt(8);
+
+    background-color: $sroke-color;
+  }
+
+  &__image {
+    width: calc-adapt(240);
+    height: calc-adapt(240);
+
+    margin-top: calc-adapt(-5);
+    margin-bottom: calc-adapt(-55);
+  }
+
+  &__bottom {
+    display: flex;
+    flex-direction: column;
+    min-height: calc-adapt(150);
+
+    gap: calc-adapt(15);
+    padding: calc-adapt(25);
+
+    background-color: white;
+  }
+
+  &__title {
+    font-size: calc-adapt(20);
+    font-weight: 700;
+    color: $text-primary-color;
+  }
+
+  &__text {
+    font-size: calc-adapt(16);
+    font-weight: 400;
+    color: $text-primary-color;
+  }
+}

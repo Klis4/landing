@@ -1,0 +1,99 @@
+@import "./common/functions.scss";
+@import "./common/variables.scss";
+
+.contact-us {
+  &__container {
+    padding: calc-adapt(29, 0);
+  }
+
+  &__title-wrapper {
+    line-height: calc-adapt(22);
+  }
+
+  &__title {
+    font-size: calc-adapt(18);
+    font-weight: 700;
+    color: $text-primary-color;
+  }
+}
+
+.subscribe-form {
+  display: flex;
+  flex-direction: row;
+
+  gap: calc-adapt(15);
+
+  &__input {
+    width: calc-adapt(210);
+    padding: calc-adapt(15, 30);
+
+    border: 1px solid $primary-color;
+    border-radius: 100px;
+    outline: none;
+
+    text-align: center;
+    font-size: calc-adapt(16);
+    font-weight: 600;
+    color: $text-primary-color;
+  }
+
+  &__submit-btn {
+    width: fit-content;
+    padding: calc-adapt(15, 30);
+
+    border: 1px solid $primary-color;
+    border-radius: 100px;
+    background: $green-gradient;
+
+    font-size: calc-adapt(16);
+    font-weight: 600;
+    color: white;
+
+    &:hover {
+      background: linear-gradient(
+        90deg,
+        #{$green-gradient-finish} 0%,
+        #{$green-gradient-start} 100%
+      );
+    }
+
+    &.submitted {
+      background: linear-gradient(90deg, gray 0%, black 80%);
+    }
+  }
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+
+  &__title-wrapper {
+    display: flex;
+    align-items: center;
+
+    line-height: calc-adapt(22);
+    padding: 0;
+  }
+  &__title {
+    font-size: calc-adapt(16);
+    font-weight: 700;
+    color: $text-primary-color;
+  }
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: row;
+
+  gap: calc-adapt(15);
+
+  &__item {
+    width: calc-adapt(60);
+    padding: 0;
+
+    a > img {
+      width: calc-adapt(60);
+      height: calc-adapt(60);
+    }
+  }
+}

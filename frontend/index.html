@@ -1,0 +1,685 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="src/assets/icons/favicon.ico" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="src/libs/bootstrap/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="src/css/index.min.css" />
+    <title>Landing</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="upper-nav container">
+        <div class="row align-items-center justify-content-between g-0">
+          <div class="upper-nav__logo col-2 g-0">
+            <img
+              src="src/assets/img/logo.png"
+              alt="logo"
+              class="logo"
+              width="200"
+              height="112"
+              loading="lazy"
+            />
+          </div>
+          <div class="col-3 g-0">
+            <div class="salons row align-items-center g-0">
+              <span class="salons__title col-12 g-0 text-uppercase">Салоны</span>
+              <div class="salons__content row g-0">
+                <a
+                  class="salons__city salons__city_active col-auto"
+                  type="button"
+                  >Гродно (10)</a
+                >
+                <div class="separator vertical"></div>
+                <a class="salons__city col-auto" type="button">Токио (10)</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-2 g-0">
+            <button class="header__check-request-btn" type="button">
+              <img
+                src="src/assets/icons/LettersIcon.svg"
+                alt="letters"
+                width="30"
+                height="30"
+                loading="lazy"
+              />
+              <span>Запишитесь на проверку</span>
+            </button>
+          </div>
+          <div class="header-contacts col-2 g-0">
+            <div class="row align-items-center">
+              <div class="col-12">
+                <a class="header-contacts__phone" href="tel:+7 (800) 111-111-1"
+                  >+7 (800) 111-111-1</a
+                >
+              </div>
+              <div class="col-12">
+                <a class="header-contacts__callme" href="#" role="button"
+                  >Перезвоните мне</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="header-buttons col-1 g-0">
+            <button
+              class="header-buttons__button header-buttons__button_favourite position-relative"
+            >
+              <img
+                class="icon-button"
+                src="src/assets/icons/HeartIcon.svg"
+                alt="favourite"
+                width="28"
+                height="24"
+              />
+              <span class="position-absolute badge rounded-pill">
+                7
+                <span class="visually-hidden">favourites number</span>
+              </span>
+            </button>
+            <button
+              class="header-buttons__button header-buttons__button_cart position-relative"
+            >
+              <img
+                class="icon-button"
+                src="src/assets/icons/CartIcon.svg"
+                alt="favourite"
+                width="30"
+                height="28"
+              />
+              <span class="position-absolute badge rounded-pill">
+                3
+                <span class="visually-hidden">items in cart</span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-nav">
+        <div
+          class="row align-items-center justify-content-center position-relative"
+        >
+          <div class="col-6">
+            <nav class="bottom-nav__navigation row justify-content-between">
+              <a class="bottom-nav__item col-2 g-0" href="#">Текст текст</a>
+              <div class="separator vertical"></div>
+              <a class="bottom-nav__item col-2 g-0" href="#"
+                >Текст текст текст</a
+              >
+              <div class="separator vertical"></div>
+              <a class="bottom-nav__item col-2 g-0" href="#">Текст текст</a>
+              <div class="separator vertical"></div>
+              <a class="bottom-nav__item col-2 g-0" href="#">Текст текст</a>
+              <div class="separator vertical"></div>
+              <a class="bottom-nav__item col-2 g-0" href="#">Текст текст</a>
+              <div class="separator vertical"></div>
+              <a class="bottom-nav__item col-2 g-0" href="#">Текст и текст</a>
+            </nav>
+          </div>
+          <div class="bottom-nav__search position-absolute">
+            <img
+              src="src/assets/icons/MagnifyingGlassIcon.svg"
+              alt="search"
+              class="search-icon"
+              width="24"
+              height="24"
+              loading="lazy"
+            />
+            <input type="search" class="search-input" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="hero">
+        <div class="container">
+          <div class="row">
+            <div class="hero__left col-8">
+              <nav
+                class="hero__breadcrumb"
+                style="--bs-breadcrumb-divider: &quot;&quot;"
+                aria-label="breadcrumb"
+              >
+                <ol class="breadcrumb align-items-center">
+                  <li class="breadcrumb-item">
+                    <a href="#"
+                      ><img
+                        class="breadcrumb-item__icon"
+                        src="src/assets/icons/HomeIcon.svg"
+                        alt="home"
+                        width="16"
+                        height="16"
+                        loading="lazy"
+                    /></a>
+                  </li>
+                  <li class="breadcrumb-item" aria-current="page">
+                    <span>Текст текст</span>
+                  </li>
+                </ol>
+              </nav>
+              <div class="hero__content">
+                <h1 class="hero__title">
+                  Заголовок
+                  <span class="primary-color">текст текст</span>
+                  текст текст текст текст
+                </h1>
+                <p class="hero__text">
+                  текст текст, текст текст текст текст текст текст текст текст
+                  текст текст текст текст текст текст текст текст текст текст
+                  текст текст текст текст текст текст текст текст текст текст
+                  текст текст текст текст текст текст.
+                  <i
+                    >Текст &ndash; текст текст текст текст текст , текст текст
+                    текст текст текст текст текст текст текст текст текст текст
+                    текст текст текст текст.</i
+                  >
+                </p>
+              </div>
+              <button
+                class="hero__check-request-btn text-uppercase"
+                type="button"
+              >
+                записаться на проверку
+              </button>
+            </div>
+            <div class="hero__right col-4">
+              <img
+                src="src/assets/img/hero.png"
+                alt="hero image"
+                class="hero__image image"
+                width="400"
+                height="509"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="advantages">
+        <div class="advantages__container container">
+          <h3 class="advantages__title">Заголовок заголовок заголовок</h3>
+          <div class="advantages-cards-wrapper row">
+            <div class="advantage-card col-4">
+              <img
+                src="src/assets/icons/advantage-1.svg"
+                alt="first advantage-card"
+                class="advantage-card__image"
+                width="74"
+                height="74"
+                loading="lazy"
+              />
+              <div class="advantage-card__content">
+                <span class="advantage-card__text text-uppercase">
+                  Текст <span class="primary-color">Текст текст</span> Текст
+                  текст Текст
+                </span>
+              </div>
+            </div>
+            <div class="advantage-card col-4">
+              <img
+                src="src/assets/icons/advantage-2.svg"
+                alt="second advantage-card"
+                class="advantage-card__image"
+                width="74"
+                height="74"
+                loading="lazy"
+              />
+              <div class="advantage-card__content">
+                <span class="advantage-card__text text-uppercase">
+                  Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст
+                </span>
+              </div>
+            </div>
+            <div class="advantage-card col-4">
+              <img
+                src="src/assets/icons/advantage-3.svg"
+                alt="third advantage-card"
+                class="advantage-card__image"
+                width="74"
+                height="74"
+                loading="lazy"
+              />
+              <div class="advantage-card__content">
+                <span class="advantage-card__text text-uppercase">
+                  Текст Текст Текст Текст
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="advantages-cards-wrapper row">
+            <div class="advantage-card col-4">
+              <img
+                src="src/assets/icons/advantage-4.svg"
+                alt="fourth advantage-card"
+                class="advantage-card__image"
+                width="74"
+                height="74"
+                loading="lazy"
+              />
+              <div class="advantage-card__content">
+                <span class="advantage-card__text text-uppercase">
+                  Текст Текст Текст Текст Текст Текст Текст Текст
+                </span>
+              </div>
+            </div>
+            <div class="advantage-card col-4">
+              <img
+                src="src/assets/icons/advantage-5.svg"
+                alt="fifth advantage-card"
+                class="advantage-card__image"
+                width="74"
+                height="74"
+                loading="lazy"
+              />
+              <div class="advantage-card__content">
+                <span class="advantage-card__text text-uppercase">
+                  <span class="primary-color"> Текст Текст Текст </span>, Текст
+                  Текст Текст Текст Текст Текст
+                </span>
+              </div>
+            </div>
+            <div class="advantage-card col-4">
+              <img
+                src="src/assets/icons/advantage-6.svg"
+                alt="sixth advantage-card"
+                class="advantage-card__image"
+                width="74"
+                height="74"
+                loading="lazy"
+              />
+              <div class="advantage-card__content">
+                <span class="advantage-card__text text-uppercase">
+                  Текст Текст Текст Текст Текст Текст
+                </span>
+              </div>
+            </div>
+          </div>
+          <button
+            class="check-request_btn text-uppercase"
+            type="button"
+          >
+            Записаться на проверку
+            <img
+              src="src/assets/icons/ArrowRoundIcon.svg"
+              alt="arrow round icon"
+              width="50"
+              height="50"
+              loading="lazy"
+            />
+          </button>
+        </div>
+      </section>
+
+      <section class="benefits">
+        <div class="benefits__container container">
+          <div class="row justify-content-between">
+            <div class="benefits__left col-7">
+              <h3 class="benefits__title">Текст текст:</h3>
+              <ul class="benefits-list">
+                <li class="benefits-list__item">текст текст</li>
+                <li class="benefits-list__item">текст текст текст текст</li>
+                <li class="benefits-list__item">текст</li>
+                <li class="benefits-list__item">
+                  текст текст текст текст текст текст текст текст текст текст
+                  текст текст
+                </li>
+                <li class="benefits-list__item">
+                  текст текст текст текст текст текст текст текст текст текст
+                </li>
+                <li class="benefits-list__item">
+                  текст текст текст текст текст текст текст текст текст текст
+                  текст текст текст текст
+                </li>
+              </ul>
+            </div>
+            <div class="benefits__right col-4">
+              <img
+                src="src/assets/img/benefits.png"
+                alt="benefits"
+                class="benefits__image image"
+                width="350"
+                height="246"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="how-it-works">
+        <div class="how-it-works__container container">
+          <h3 class="how-it-works__title">Заголовок</h3>
+          <div class="how-it-works__swiper swiper" id="how-it-works-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide how-it-works-slide">
+                <div class="row g-0">
+                  <div class="how-it-works-slide__upper col-12">
+                    <img
+                      src="src/assets/img/how-it-works-1.png"
+                      alt="first case"
+                      class="how-it-works-slide__image"
+                      width="265"
+                      height="265"
+                      loading="lazy"
+                    />
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                  <div class="how-it-works-slide__bottom col-12">
+                    <h3 class="how-it-works-slide__title">
+                      Вопрос вопрос вопрос?
+                    </h3>
+                    <span class="how-it-works-slide__text"
+                      >Текст Текст Текст Текст Текст Текст
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide how-it-works-slide">
+                <div class="row g-0">
+                  <div class="how-it-works-slide__upper col-12">
+                    <img
+                      src="src/assets/img/how-it-works-2.png"
+                      alt="second case"
+                      class="how-it-works-slide__image"
+                      width="265"
+                      height="265"
+                      loading="lazy"
+                    />
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                  <div class="how-it-works-slide__bottom col-12">
+                    <h3 class="how-it-works-slide__title">
+                      Вопрос вопрос вопрос?
+                    </h3>
+                    <span class="how-it-works-slide__text"
+                      >Текст Текст Текст Текст Текст Текст
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide how-it-works-slide">
+                <div class="row g-0">
+                  <div class="how-it-works-slide__upper col-12">
+                    <img
+                      src="src/assets/img/how-it-works-3.png"
+                      alt="third case"
+                      class="how-it-works-slide__image"
+                      width="265"
+                      height="265"
+                      loading="lazy"
+                    />
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                  <div class="how-it-works-slide__bottom col-12">
+                    <h3 class="how-it-works-slide__title">
+                      Вопрос вопрос вопрос?
+                    </h3>
+                    <span class="how-it-works-slide__text"
+                      ><b>Текст</b> Текст Текст Текст Текст Текст Текст Текст
+                      Текст Текст*</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide how-it-works-slide">
+                <div class="row g-0">
+                  <div class="how-it-works-slide__upper col-12">
+                    <img
+                      src="src/assets/img/how-it-works-4.png"
+                      alt="fourth case"
+                      class="how-it-works-slide__image"
+                      width="265"
+                      height="265"
+                      loading="lazy"
+                    />
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                  <div class="how-it-works-slide__bottom col-12">
+                    <h3 class="how-it-works-slide__title">
+                      Вопрос вопрос вопрос вопрос?
+                    </h3>
+                    <span class="how-it-works-slide__text"
+                      >Текст Текст Текст Текст Текст Текст Текст Текст Текст
+                      Текст Текст Текст
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <span class="how-it-works__additional-info"
+            >*текст текст текст текст текст текст текст текст текст текст текст
+            текст текст текст текст текст текст текст текст текст текст текст
+            текст текст текст текст текст текст текст текст текст.</span
+          >
+        </div>
+      </section>
+
+      <section class="faq">
+        <div class="faq__container container">
+          <div class="faq__content row justify-content-between">
+            <div class="faq__left col-6">
+              <h3 class="faq__title">
+                Вопрос вопрос вопрос вопрос вопрос вопрос вопрос?
+              </h3>
+              <ol class="faq-list">
+                <li class="faq-list__item">
+                  Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст
+                </li>
+                <li class="faq-list__item">
+                  Текст Текст Текст Текст Текст Текст Текст
+                </li>
+                <li class="faq-list__item">
+                  Текст Текст Текст Текст Текст Текст Текст Текст
+                </li>
+                <li class="faq-list__item">
+                  Текст Текст Текст Текст Текст Текст Текст Текст Текст
+                </li>
+                <li class="faq-list__item">
+                  Текст Текст Текст Текст Текст Текст
+                </li>
+              </ol>
+              <p class="faq__text">
+                Текст текст текст текст текст текст текст текст текст текст
+                текст текст текст текст текст текст текст текст текст текст
+                текст текст текст текст текст текст текст текст текст текст
+                текст текст текст текст текст текст текст текст текст текст
+                текст текст текст текст текст текст текст текст .
+              </p>
+            </div>
+            <div class="faq__right col-4">
+              <img
+                src="src/assets/img/faq.png"
+                alt="faq image"
+                class="faq__image image"
+                width="480"
+                height="521"
+                loading="lazy"
+                data-bs-toggle="modal" data-bs-target="#exampleModal"
+              />
+            </div>
+          </div>
+          <button
+            class="check-request_btn text-uppercase"
+            type="button"
+          >
+            Записаться на проверку
+            <img
+              src="src/assets/icons/ArrowRoundIcon.svg"
+              alt="arrow round icon"
+              width="50"
+              height="50"
+              loading="lazy"
+            />
+          </button>
+        </div>
+      </section>
+
+      <section class="contact-us">
+        <div class="contact-us__container container">
+          <div class="row align-items-center">
+            <div class="contact-us__title-wrapper col-4">
+              <span class="contact-us__title">Текст текст текст текст текст
+                текст текст </span>
+            </div>
+            <div class="col-4">
+              <form id="subscribe-form" class="subscribe-form row" name="subscribe">
+                <input class="subscribe-form__input col-6" type="email" autocomplete="email" name="email" pattern="/^((([0-9A-Za-z]{1}[-0-9A-z\.]{1,}[0-9A-Za-z]{1})|([0-9А-Яа-я]{1}[-0-9А-я\.]{1,}[0-9А-Яа-я]{1}))@([-A-Za-z]{1,}\.){1,2}[-A-Za-z]{2,})$/u" placeholder="email@email.com" required></input>
+                <button class="subscribe-form__submit-btn col-6" id="subscribe-form-btn" type="submit">Подписаться</button>
+              </form>
+            </div>
+            <div class="col-4">
+              <div class="socials row align-items-center justify-content-between">
+                <div class="socials__title-wrapper col-3">
+                  <span class="socials__title text-uppercase">мы в соц. сетях</span>
+                </div>
+                <div class="col-8">
+                  <div class="social-icons row">
+                    <div class="social-icons__item col-4">
+                      <a href="https://vk.com/">
+                        <img src="src/assets/icons/VkIcon.svg" alt="vk" width="60" height="60" loading="lazy">
+                      </a>
+                    </div>
+                    <div class="social-icons__item col-4">
+                      <a href="https://facebook.com/">
+                        <img src="src/assets/icons/FbIcon.svg" alt="facebook" width="60" height="60" loading="lazy">
+                      </a>
+                    </div>
+                    <div class="social-icons__item col-4">
+                      <a href="https://instagram.com/">
+                        <img src="src/assets/icons/InstIcon.svg" alt="instagram" width="60" height="60" loading="lazy">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__content">
+        <div class="footer__content-container container">
+          <div class="row">
+            <div class="footer-left col-3">
+              <div class="footer-left__upper">
+                <div class="footer__logo"><img src="src/assets/img/logo.png" alt="logo" class="logo"></div>
+                <div class="footer-left__item">
+                  <img src="src/assets/icons/PhoneIcon.svg" alt="phone icon" width="16" height="16" loading="lazy"></img>
+                  <a href="tel:+7 (800) 111-111-1">+7 (800) 111-111-1</a>
+                </div>
+                <div class="footer-left__item">
+                  <img src="src/assets/icons/EmailIcon.svg" alt="email icon" width="16" height="16" loading="lazy">
+                  <a href="mailto: info@video.com">
+                    info@vimeo.ru
+                  </a>
+                </div>
+                <div class="footer-left__item footer-left__item_underlined">
+                  <img src="src/assets/icons/QuestionIcon.svg" alt="question icon" width="16" height="16" loading="lazy">
+                  <a href="#">Задать ввопрос</a>
+                </div>
+                <div class="footer-left__item footer-left__item_underlined">
+                  <img src="src/assets/icons/ReviewIcon.svg" alt="review icon" width="16" height="16" loading="lazy">
+                  <a href="#">Оставить отзыв</a>
+                </div>
+                <div class="separator horizontal"></div>
+                <span class="footer-left__text">
+                  текст текст текст текст текст текст текст текст текст текст текст текст текст 
+                </span>
+              </div>
+            </div>
+            <div class="footer-right col-9">
+              <div class="row">
+                <nav class="footer-nav col-3">
+                  <h4 class="footer-nav__title">Заголовок</h4>
+                  <ul class="footer-nav__links">
+                    <li class="footer-nav__link"><a href="#">Название</a></li>
+                    <li class="footer-nav__link"><a href="#">Название Название</a></li>
+                    <li class="footer-nav__link"><a href="#">Название Название</a></li>
+                    <li class="footer-nav__link"><a href="#">Название</a></li>
+                    <li class="footer-nav__link"><a href="#">Названиеназвание</a></li>
+                  </ul>
+                </nav>
+                <nav class="footer-nav col-3">
+                  <h4 class="footer-nav__title">Заголовок</h4>
+                  <ul class="footer-nav__links">
+                    <li class="footer-nav__link"><a href="#">Название</a></li>
+                    <li class="footer-nav__link"><a href="#">Название название</a></li>
+                    <li class="footer-nav__link"><a href="#">Название название</a></li>
+                    <li class="footer-nav__link"><a href="#">Название название</a></li>
+                    <li class="footer-nav__link"><a href="#">Название</a></li>
+                    <li class="footer-nav__link"><a href="#">Название</a></li>
+                    <li class="footer-nav__link"><a href="#">Название название</a></li>
+                    <li class="footer-nav__link"><a href="#">Название</a></li>
+                  </ul>
+                </nav>
+                <nav class="footer-nav col-3">
+                  <h4 class="footer-nav__title">Заголовок Заголовок</h4>
+                  <ul class="footer-nav__links">
+                    <li class="footer-nav__link"><a href="#">Название</a></li>
+                    <li class="footer-nav__link"><a href="#">Название</a></li>
+                    <li class="footer-nav__link"><a href="#">Название</a></li>
+                    <li class="footer-nav__link"><a href="#">Название</a></li>
+                    <li class="footer-nav__link"><a href="#">Название</a></li>
+                    <li class="footer-nav__link"><a href="#">Название название</a></li>
+                    <li class="footer-nav__link"><a href="#">Название</a></li>
+                  </ul>
+                </nav>
+                <nav class="footer-nav col-3">
+                  <h4 class="footer-nav__title">Заголовок</h4>
+                  <ul class="footer-nav__links">
+                    <li class="footer-nav__link"><a href="#">Название</a></li>
+                    <li class="footer-nav__link"><a href="#">Название</a></li>
+                    <li class="footer-nav__link"><a href="#">Название</a></li>
+                    <li class="footer-nav__link"><a href="#">Название название</a></li>
+                    <li class="footer-nav__link"><a href="#">Название</a></li>
+                    <li class="footer-nav__link"><a href="#">Название</a></li>
+                    <li class="footer-nav__link"><a href="#">Название</a></li>
+                    <li class="footer-nav__link"><a href="#">Название</a></li>
+                    <li class="footer-nav__link"><a href="#">Название</a></li>
+                    <li class="footer-nav__link"><a href="#">Название</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+      <div class="footer__copyright">
+        <div class="copyright-container container">
+          <span class="privacy-policy"><a href="#">Политика конфиденциальности</a></span>
+          <span class="copyright">© Все права защищены авторским правом</span>
+        </div>
+      </div>
+    </footer>
+
+    <div id="imageModal" class="image-modal">
+      <span class="image-modal__close">&times;</span>
+      <img id="modalImage" class="image-modal__content" src="" alt="Modal Image">
+    </div>
+
+    <div id="check-request-modal" class="check-request-modal">
+      <span class="image-modal__close">&times;</span>
+      <form class="check-request-modal__form" action="" enctype="application/x-www-form-urlencoded" method="post" name="check-request-form">
+        <input type="email" class="check-request-modal__input" placeholder="email@email.com" id="check-request-modal-email" name="email" required>
+        <input type="tel" class="check-request-modal__input" placeholder="+7 (800) 111-111-1" id="check-request-modal-phone" name="phone" required>
+        <div class="check-request-modal__checkbox-wrapper">
+          <input type="checkbox" id="check-request-modal-newsletters" name="newsletters" required>
+          <label for="check-request-modal-newsletters">Я хочу получать информацию о новостях и акциях компании</label>
+        </div>
+        <button class="check-request-modal__submit-btn" type="submit">Записаться на проверку</button>
+      </form>
+    </div>
+
+    <script src="src/libs/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="src/js/index.min.js"></script>
+  </body>
+</html>

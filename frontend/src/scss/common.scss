@@ -1,0 +1,56 @@
+@import "./common/variables.scss";
+@import "./common/functions.scss";
+
+.separator {
+  background-color: $sroke-color;
+
+  &.vertical {
+    width: 1px;
+    padding: 0 0.5px;
+  }
+
+  &.horizontal {
+    height: 1px;
+    padding: 0.5px 0;
+  }
+}
+
+.primary-color {
+  color: $primary-color;
+}
+
+.container {
+  max-width: calc-adapt(1320);
+}
+
+.check-request_btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  gap: calc-adapt(20);
+  padding: calc-adapt(10, 0, 10, 30);
+
+  width: calc-adapt(332);
+
+  border-radius: 100px;
+  border: none;
+  background: $green-gradient;
+
+  font-size: calc-adapt(16);
+  font-weight: 700;
+  color: white;
+
+  img {
+    width: calc-adapt(50);
+    height: calc-adapt(50);
+  }
+
+  &:hover {
+    background: linear-gradient(
+      90deg,
+      #{$green-gradient-finish} 0%,
+      #{$green-gradient-start} 100%
+    );
+  }
+}

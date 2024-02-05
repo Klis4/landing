@@ -1,0 +1,24 @@
+/* Common */
+$stock-layout-width: 1920;
+
+/*Colors*/
+$primary-color: #76b926;
+
+$text-primary-color: #37454a;
+$text-60-color: #37454a99;
+
+$sroke-color: #dfdfdf;
+$grey-bg-color: #edeef0;
+
+$green-color: #6eb744;
+$dark-green-color: #62a53c;
+
+$bg-light-gray: #f4f4f4;
+
+$green-gradient-start: #6cb644;
+$green-gradient-finish: #82ca2c;
+$green-gradient: linear-gradient(
+  90deg,
+  #{$green-gradient-start} 0%,
+  #{$green-gradient-finish} 100%
+);
