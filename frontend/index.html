@@ -130,7 +130,7 @@
               height="24"
               loading="lazy"
             />
-            <input type="text" class="search-input" />
+            <input type="search" class="search-input" />
           </div>
         </div>
       </div>
@@ -660,6 +660,24 @@
         </div>
       </div>
     </footer>
+
+    <div id="imageModal" class="image-modal">
+      <span class="image-modal__close">&times;</span>
+      <img id="modalImage" class="image-modal__content" src="" alt="Modal Image">
+    </div>
+
+    <div id="check-request-modal" class="check-request-modal">
+      <span class="image-modal__close">&times;</span>
+      <form class="check-request-modal__form" action="" enctype="application/x-www-form-urlencoded" method="post" name="check-request-form">
+        <input type="email" class="check-request-modal__input" placeholder="email@email.com" id="check-request-modal-email" name="email" required>
+        <input type="tel" class="check-request-modal__input" placeholder="+7 (800) 111-111-1" id="check-request-modal-phone" name="phone" required>
+        <div class="check-request-modal__checkbox-wrapper">
+          <input type="checkbox" id="check-request-modal-newsletters" name="newsletters" required>
+          <label for="check-request-modal-newsletters">Я хочу получать информацию о новостях и акциях компании</label>
+        </div>
+        <button class="check-request-modal__submit-btn" type="submit">Записаться на проверку</button>
+      </form>
+    </div>
 
     <script src="src/libs/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="src/js/index.min.js"></script>
