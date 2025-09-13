@@ -1,4 +1,7 @@
 # landing
+
+## This is a test task as a step of interview
+
 HTML and CSS landing page
 
 How to run project in DEV mode
